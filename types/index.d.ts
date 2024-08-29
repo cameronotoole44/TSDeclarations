@@ -2,9 +2,10 @@ declare module 'lodash'{
   // multiplication only works on numbers
   function multiply(multiplier: number, multiplicand: number): number
   
-  // the below is an example of function overloading
+    // the below is an example of function overloading
+      function reverse(arr:number[]):number[]
   function reverse(arr:string[]):string[]
-  function reverse(arr:number[]):number[]
+
   // using the generic below replaces the need for function overloading.
   // function reverse<T>(arr:T[]):T[]
 
